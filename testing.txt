@@ -1,6 +1,7 @@
 working on test file 
 testing
 
+<<<<<<< HEAD
 git work flow
 
 //Go to your local working directory 
@@ -56,3 +57,6 @@ fr is a alias name given to the flipkart repository
 $ git push fr master --->> //moving file from local to remote repository
 
 $ git log   ------->>//to check all the commit id's
+=======
+Hello world
+>>>>>>> aeda5a2d7292fd6a6c7e69df94dc61495f6a0ec9
