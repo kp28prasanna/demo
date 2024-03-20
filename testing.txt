@@ -1,2 +1,58 @@
 working on test file 
 testing
+
+git work flow
+
+//Go to your local working directory 
+ $ cd ~/Desktop/
+ $pwd // c:user/punith/desktop
+ $ mkdir repo name // create a repo or project name
+ $ cd flipkart/  ---->> //point to that file c:/user/punith/desktop/flipkart
+ $ $ls -la   -->>> // check for the all the files inside the folder
+ $ git init --->> // create a empty git file inside the repository folder
+                   c:users/punith/desktop/flipkart/.git
+
+ $ ls -la -->> en empty git file is initialized
+
+ $ vi DBUtils.java --->>// create a file and push a code inside that
+
+3 working stages of git 
+
+1.working area  
+2.staging area 
+3.local repository
+
+all the files which we have created will be in the working area 
+we need to add that file in the working area to the staging area
+
+working --->>>>> staging area
+$ git add abc.java  ---->>// file moved from working area to the staging area
+
+$ git status // to check file has moved 
+
+staging area --->>>> local repository
+$ git commit -m "recent commit message"  --->>> use commit to move from staging to local repo
+
+for the very first time if you are using committ  
+$ git commit -m "first commit" check the error messsage the go for below command
+// before going to commit we need to check the login credentials 
+command: git config --global "user.name"
+         git congig --global "user.email"
+
+	 type this after the above command
+	 ---- git commit -m "first commit" -----
+
+local repository --->>> to remote repository
+connect local to remote using the username and the password while creating the git account
+
+$ git remote -v --->> to check mapped or not
+// fr _________ (fetch)
+// fr _________ (pull)
+
+$ git remote add fr https://www.github.com/flipkart.git
+				 
+fr is a alias name given to the flipkart repository
+
+$ git push fr master --->> //moving file from local to remote repository
+
+$ git log   ------->>//to check all the commit id's
